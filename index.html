@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Piedra, papel o tijera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="cont"><h1>Piedra, papel o tijera</h1></div>
+        <div id="score-cont">
+            <p id="score"></p>
+            <p id="best-score"></p>
+        </div>
+    </header>
+    <section class="main">
+        <div id="peleas">
+            <div id="div-resultado"></div>
+            <div id="miMano"><h3>Tu eleccion se mostrara aqui</h3></div>
+            <div id="maquina"><h3>La eleccion de la casa se vera aqui</h3></div>
+        </div>
+        <div class="botones">
+            <div class="div-mano" id="btn-piedra">
+                <button class="boton" data-mano="0"><img class="mano" id="piedra" src="icons/icons8-hand-rock-100.png" alt="Piedra"></button>
+            </div>
+            <div class="div-mano" id="btn-papel">
+                <button class="boton" data-mano="1"><img class="mano" id="papel" src="icons/icons8-hand-100.png" alt="Papel"></button>
+            </div>
+            <div class="div-mano" id="btn-tijera">
+                <button class="boton" data-mano="2"><img class="mano" id="tijera" src="icons/icons8-hand-scissors-100.png" alt="Tijera"></button>
+            </div>
+        </div>
+    </section>
+    <aside class="reglas">
+        <button id="btn-reglas">Ver reglas</button>
+        <div id="div-reglas" class="cerrado">
+            <button id="cerrar">x</button>
+            <img src="icons/reglas-PPT.png" alt="Reglas del piedra papel o tijera" id="img-reglas">
+            <p id="explicacion">Cada vez que ganes un enfrentamiento sumaras un punto. <br/> Al empatar, tu puntaje no se modificará. <br/> Si pierdes, tu puntaje se reiniciará a 0. <br/><br/> Intenta llegar al mayor puntaje posible, mucha suerte. </p>
+        </div>
+    </aside>
+
+<script src="main.js"></script>
+</body>
+</html>
